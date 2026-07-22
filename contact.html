@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    Author: Sierra Dalton
+    File: contact.html
+    Date: 07/22/2026
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra Dalton - Contact</title>
+    <!-- CSS Link (#5) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="images/pfp.jpg" alt="Sierra Dalton - Return to Home Page" width="100" class="header-logo">
+        </a>
+        <h1><a href="index.html#about" class="header-title-link">Sierra Dalton</a></h1>
+        <p>Lexington, KY 40517 </p>
+    </header>
+
+    <!-- Nav Bar (#1) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="credentials.html">Credentials</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Contact Info Section -->
+        <section>
+            <h2>Get in Touch</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>Phone:</strong> +1 (859) 519-5616</li>
+                    <li><strong>Email:</strong> <a href="mailto:srclement16@gmail.com">srclement16@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Page Break Line -->
+        <hr class="page-break">
+
+        <!-- Contact Form Section -->
+        <section>
+            <h2>Inquiries</h2>
+            <!-- Form with 5+ elements (#7) -->
+            <form action="#" method="post" id="contactForm">
+                <!-- 1. Text Box -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required>
+                </div>
+
+                <!-- 2. Email Field -->
+                <div class="form-group">
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="name@example.com" required>
+                </div>
+
+                <!-- 3. Radio Buttons -->
+                <fieldset class="form-group">
+                    <legend>Inquiry Type:</legend>
+                    <input type="radio" id="typeGen" name="inquiryType" value="general" checked>
+                    <label for="typeGen">General</label>
+                    
+                    <input type="radio" id="typeJob" name="inquiryType" value="employment">
+                    <label for="typeJob">Employment / Opportunity</label>
+                </fieldset>
+
+                <!-- 4. Checkbox -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="requestResume" name="requestResume" value="yes">
+                    <label for="requestResume">Request a copy of my full resume</label>
+                </div>
+
+                <!-- 5. Textarea -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sierra Dalton. All rights reserved.</p>
+    </footer>
+
+    <!-- JS Link (#14) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
