@@ -280,6 +280,12 @@ footer {
     .card-container {
         flex-direction: column;
     }
+
+/* Centers image and caption on mobile */
+    .cat-figure {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
 }
 
 /* --- Page Break For Format --- */
@@ -293,4 +299,25 @@ hr.page-break {
 /* --- Last Minute Changes  --- */
 h2 {
     color: #F3B95F;
+}
+/* --- Albert Figure & Caption Styling --- */
+.cat-figure {
+    float: right;
+    margin: 0 0 10px 20px;
+    text-align: center;
+    width: 200px; /* Help Mobile? */
+}
+
+.cat-figure img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cat-figure figcaption {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #E5A96A;
+    margin-top: 8px;
 }
